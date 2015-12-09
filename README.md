@@ -8,8 +8,5 @@ Rules:
 
 This is my entry:
 
-With `x86_64-pc-windows-msvc` build the project with this command:
-`rustc --release --verbose -- -Clink-args="/ENTRY:entry_point /ALIGN:16"`
-
-The resulting .exe is 1,536 bytes.
-
+With `x86_64-pc-windows-msvc` the following command creates a 1,408 byte .exe:
+`cargo rustc --release -- -Clink-args="/ENTRY:entry_point /ALIGN:16 /MERGE:.text=.data /MERGE:.rdata=.data /MERGE:.pdata=.data"`
