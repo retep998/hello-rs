@@ -1,0 +1,11 @@
+[package]
+authors = ["Peter Atashian <retep998@gmail.com>"]
+name = "hello"
+version = "0.1.0"
+
+[dependencies]
+kernel32-sys = "0.2.1"
+winapi = "0.2.5"
+
+[profile.release]
+lto = true
