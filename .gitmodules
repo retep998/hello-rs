@@ -1,0 +1,3 @@
+[submodule "linux/syscall.rs"]
+	path = linux/syscall.rs
+	url = git@github.com:ubsan/syscall.rs
