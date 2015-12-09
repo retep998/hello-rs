@@ -1,4 +1,4 @@
-I hereby challenge everyone to write Rust programs on their platform of choice that print out "Hello world!" to the console with a binary that is as small as possible.
+I hereby challenge everyone to write Rust programs on their platform of choice that print out "Hello world!" with a newline to the console with a binary that is as small as possible.
 
 Rules:
 * All Rust libraries must be statically linked (including libstd and friends).
