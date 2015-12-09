@@ -3,6 +3,8 @@ I hereby challenge everyone to write Rust programs on their platform of choice t
 Rules:
 * All Rust libraries must be statically linked (including libstd and friends).
 * Aside from Rust libraries, you can only depend on libc and system libraries.
+* No assembly, not even inline assembly.
+* All code must be Rust.
 
 This is my entry:
 
