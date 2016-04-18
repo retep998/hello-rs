@@ -10,10 +10,10 @@ Windows
 -------
 In the `windows` directory.
 
-With `x86_64-pc-windows-msvc` the following command creates a 1,536 byte .exe:
-`cargo rustc --release -- -Clink-args="/ENTRY:entry_point /ALIGN:16"`
+With `x86_64-pc-windows-msvc` the following command creates a 1,312 byte .exe:
+`cargo rustc --release -- -Clink-args="/ENTRY:entry_point /ALIGN:16 /SUBSYSTEM:CONSOLE /NODEFAULTLIB"`
 
-This entry has the advantage of using nothing more than stable Rust and still having access to all of libstd.
+This entry requires nightly Rust, but only depends on libcore and kernel32.dll.
 
 Something else
 --------------
